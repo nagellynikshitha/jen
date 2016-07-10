@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h3>
+			<b>Welcome to Boot Camp Java</b>
+		</h3>
+	</div>
+	<a href="success.html">Click here for core java</a>
+	<br>
+	<form action="reg" method="POST">
+		<fieldset>
+			<legend>Java/J2EE STACK:</legend>
+			<div>
+				Years of Experience:<input type="text" name="years">
+
+			</div>
+			<br>
+			<div>
+				J2EE List:<select name="J2EE lIST">
+					<option value="Servlet"></option>
+					<option value="Servlet">Servlet</option>
+					<option value="Jsp">Jsp</option>
+					<option value="Bean">Bean</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				Web Services: <input type="radio" name="webservices" value="Rest"
+					checked> REST <input type="radio" name="webservices"
+					value="Soap"> SOAP<br>
+			</div>
+			<br>
+			<div>
+				Frameworks: <input type="checkbox" name="frameworks" value="spring">
+				spring <input type="checkbox" name="frameworks" value="Hibernate">
+				Hibernate <input type="checkbox" name="frameworks"
+					value="Angular JS" checked="checked"> Angular JS
+			</div>
+			<br>
+			<div>What is J2EE</div>
+			<textarea name="Comments" rows="10" cols="30">
+</textarea>
+			<br> <input type="submit" value="Save">
+		</fieldset>
+	</form>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<div id="dropdown">
+		<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").load("demo_test.txt");
+    });
+});
+</script>
+		<button id="dropbtn">Dropdown</button>
+		<div id="dropdown-content"></div>
+	</div>
+
+	<script>
+		
+
+	<script>
+	function showFrameworks(str) {
+	  var xhttp;
+	  if (str == "") {
+	    document.getElementById("txtHint").innerHTML = "";
+	    return;
+	  }
+	  xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+	    if (xhttp.readyState == 4 && xhttp.status == 200) {
+	      document.getElementById("txtHint").innerHTML = xhttp.responseText;
+	    }
+	  };
+	  xhttp.open("GET", "myObj?q="+str, true);
+	  xhttp.send();
+	}
+	</script>
+
+	</script>
+
+
+
+</body>
+</html>
